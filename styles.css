@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+@font-face {
+    font-family: InterBlack;
+    src: url(font/Inter-Black.ttf);
+}
+
+@font-face {
+    font-family: InterBold;
+    src: url(font/Inter-Bold.ttf);
+}
+
+:root {
+    --light-bg:#171717;
+    --dark-bg: #EEEEEE;
+}
+
+/* .dark-mode {
+    --light-bg: #EEEEEE;
+    --dark-bg: #171717;
+} */
+
+.con {
+    background-color: rgba(000, 000, 000, 0.8);
+}
+
+.container {
+    background-color: var(--light-bg);
+    color: var(--dark-bg);
+    position: relative;
+    background-image: url(img/gif4.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#mode {
+    width: 10vw;
+    text-align: right;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+#mode img{
+    width: 30px;
+}
+
+.container-body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock {
+    text-align: center;
+    cursor: pointer;   
+}
+
+.clock #date{
+    font-family: InterBold;
+}
+
+.clock #time{
+    font-family: InterBlack;
+    font-size: 50px;
+}
+
+.clock #day{
+    font-family: InterBold;
+    font-size: 20px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 30%;
+    font-family: InterBold;
+    font-size: 10px;
+}
+
+#footer span{
+    font-family: none;
+}
+
+#socials {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.fa-brands, #socials a {
+    font-size: 20px;
+    color: var(--dark-bg);
+}
+
+.audio {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: whitesmoke;
+    opacity: .5;
+    height: 40px;
+    border-radius: 30px;
+    width: 50%;
+    /* transform: rotate(270deg); */
+}
+
+.audio audio {
+    height: 100%;
+    width: 100%;
+}
+
+.play {
+    position: absolute;
+    left: 30px;
+    top: 60px;
+    width: 80px;
+}
